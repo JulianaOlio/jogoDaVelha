@@ -1,0 +1,20 @@
+package jogoDaVelha;
+
+public class Campo {
+    private char simbolo;
+
+    public Campo(){         // construtor
+        this.simbolo =' ';
+    }
+    public char getSimbolo(){
+        return this.simbolo;
+    }
+    public void setSimbolo(char simbolo) {
+        if (this.simbolo == ' ') {
+            this.simbolo = simbolo;
+        } else {
+            System.out.print("Campo já usado! ");
+        }
+    }
+
+    }
